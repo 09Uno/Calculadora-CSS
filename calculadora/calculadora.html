@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="calculadora.css" />
+		<title>Calculadora</title>
+		
+
+	</head>
+	<body>
+		<main >
+			<div id="Calculadora">
+				<div>
+					<p class="result" id="Visor"> </p>
+					<!--<input type="text" id="Visor">-->
+				</div>
+				<div id="teclado">
+					<div id="espaçosBotões">
+
+						<div id="linha1">
+							<button class="botoesLinha1" onclick="apagarTudo()">AC</button> 
+							<button class="botoesLinha1" onclick="insert('7')">7</button>
+							<button class="botoesLinha1" onclick="insert('4')">4</button>
+							<button class="botoesLinha1" onclick="insert('3')">3</button>
+							<button class="botoesLinha1" onclick="insert('0')">0</button>
+
+						</div>
+
+						<div id="linha2">
+							<button id="botãoBackspace" class="botoesLinha2" onclick="apagar()"> ←</button> 
+							<button class="botoesLinha2" onclick="insert('8')">8</button>
+							<button class="botoesLinha2" onclick="insert('5')">5</button>
+							<button class="botoesLinha2" onclick="insert('2')">2</button>
+							<button class="botoesLinha2" onclick="insert('.')">.</button>
+
+						</div>
+
+						<div id="linha3">
+							<button class="botoesLinha3" onclick="insert('**')">x^</button> 
+							<button class="botoesLinha3" onclick="insert('9')">9</button>
+							<button class="botoesLinha3" onclick="insert('6')">6</button>
+							<button class="botoesLinha3" onclick="insert('1')">1</button>
+							<button class="botoesLinha3" onclick=calcular()>=</button>
+
+						</div>
+
+						<div id="linha4">
+							<button class="botoesLinha4" onclick="insert('÷')">/</button> 
+							<button class="botoesLinha4" onclick="insert('*')">X</button>
+							<button class="botoesLinha4" onclick="insert('-')">-</button>
+							<button id="botãoMais" class="botoesLinha4" onclick="insert('+')">+</button>
+							
+
+						</div>
+
+					</div>
+				</div>
+<script src="calculadora.js"></script>
+		</main>
+	</body>
+</html>
